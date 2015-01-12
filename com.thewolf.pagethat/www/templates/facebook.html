@@ -1,0 +1,71 @@
+<ion-view>
+  <ion-content>
+		  <!-- drop down coming up -->
+
+		  <div class="list" style="margin-top:45px;">
+			   <div class="item item-button-right" style="margin-top:-10px;height:55px;background-color:#272525;color:#fff;">
+					 <p style="color:#fff;font-family: 'Raleway', sans-serif;"><img src="img/facebook.png" width="200px;"/></p>
+
+				</div>
+		  </div>
+	  
+	  
+		<!-- ng-repeat -->
+	  
+    <div class="feeds" ng-repeat="module in feeds track by $index" ng-init="test()">
+			
+         <img  src="{{ module.sourceImage }}" width = "100%"  >
+		
+          <div class="item item-body" style="border:0px;">
+			  
+              <h3 style="font-family: 'Raleway', sans-serif;"><span style="font-weight:600;">{{ module.story }}</span>
+              <!--<span style="float:right;color:#e5e5e5;"><i class="fa fa-plus" style="font-weight:400;"></i></span></h3>-->
+              <h4 style="margin-top:-10px;font-family: 'Raleway', sans-serif;font-weight:400;font-size:13px;">{{ module.message }}</h4>
+              <!--<p style="margin-top:-5px;font-family: 'Raleway', sans-serif;font-size:12px;letter-spacing:.03em;">{{ module.story }}</p>-->
+			  <!-- <p style="margin-top:-5px;font-family: 'Raleway', sans-serif;font-size:12px;letter-spacing:.03em;"></p> -->
+          </div>
+          <div class="row" style="background-color:#f6f6f6;height:45px;" id="num">
+          <div class="col col-33"></div>
+                <div class="col" style="padding-right:0px;">
+                    <div class="item tabs" style="border:0px;background-color:#f6f6f6;margin-top:-8px;height:35px;">
+                    <a class="tab-item" href="#">
+                      <i class="fa fa-heart-o"></i>
+                      1252+
+                    </a>
+                    <a class="tab-item" href="#">
+                     &nbsp; <i class="fa fa-comment-o"></i>
+                      112
+                    </a>
+                    <a class="tab-item" href="#">
+                      &nbsp;<i class="fa fa-share-square-o"></i>
+                      15
+                    </a>
+                  </div>
+                </div>
+          </div>
+      </div>
+	
+  	<!-- end app -->
+   </ion-content>
+				
+				
+
+	<div class="tabs" id="tab">
+		  <a class="tab-item">
+			HOUR
+		  </a>
+		  <a class="tab-item">
+		   DAY
+		  </a>
+		  <a class="tab-item">
+		   WEEK
+		  </a>
+		  <a class="tab-item">
+		   FEED
+		  </a>
+		  <a class="tab-item">
+		   RNDM
+		  </a>
+	  </div>
+  </ion-content>
+</ion-view>
